@@ -7,24 +7,30 @@ import Slider from "react-slick";
 const ImageList = [
   {
     id: 1,
-    img: Image1,
-    title: "Upto 50% off on all Men's Wear",
+    img: "https://gajalaxmisociety.co.in/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-06-at-12.37.50-1-1024x768.jpeg",
+    title: "Welcome to Shri Gajalaxmi Co-operative Housing Society Website",
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Since 1980 to till date all 102 members/ families are staying together as one family member.",
   },
   {
     id: 2,
-    img: Image2,
-    title: "30% off on all Women's Wear",
-    description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "https://gajalaxmisociety.co.in/wp-content/uploads/2023/03/society_green.jpg",
+    title: "About Us",
+    description: `After the Panshet floods of Pune, the flood affected population was rehabilitated
+around the precincts of main Pune City and thus new suburbs emerged, amongst
+them one is Sahakarnagar No.1 and 2. The area is spread from Parvati Hill extending
+up to Padmavati Temple touching Satara Road. In the Year 1980, Shri. V. A. Tamhankar the partner of the then renowned builder
+developer firm M/s.Tamhankar Asso. gathered some 14 members and formed the
+society in the name Shri Gajalaxmi Sahakari Gruhrachna Sanstha maryadit and
+registered the same under registration no. PNA/HSG/1436/1980 and purchased the
+land admeasuring 2 acres and 14 gunthas in Sahakarnagar situated at the foot of Taljai
+Hills near Aranyeshwar Mandir of Peshawa era.`,
   },
   {
     id: 3,
-    img: Image3,
-    title: "70% off on all Products Sale",
-    description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: "https://gajalaxmisociety.co.in/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-06-at-12.37.51-1.jpeg",
+    title: "The main motto of any society must be to uplift the livelihood.",
+    description: "We are a co-operative housing society consisting of 102 members possessing 85 flats and 34 shops.",
   },
 ];
 
@@ -75,12 +81,12 @@ const Hero = ({ handleOrderPopup }) => {
                     data-aos-duration="500"
                     data-aos-delay="300"
                   >
-                    <button
+                    {/* <button
                       onClick={handleOrderPopup}
                       className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
                       Order Now
-                    </button>
+                    </button> */}
                   </div>
                 </div>
                 {/* image section */}
@@ -93,7 +99,7 @@ const Hero = ({ handleOrderPopup }) => {
                     <img
                       src={data.img}
                       alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
+                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-cover mx-auto"
                     />
                   </div>
                 </div>

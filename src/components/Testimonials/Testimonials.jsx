@@ -4,27 +4,27 @@ import Slider from "react-slick";
 const TestimonialData = [
   {
     id: 1,
-    name: "Victor",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    name: "Mr. Rajan Chandwaskar",
+    text: "Member",
+    img: "https://thumbs.dreamstime.com/b/young-indian-man-happy-outdoors-looking-camera-39595562.jpg",
   },
   {
     id: 2,
-    name: "Satya Nadella",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    name: "Mr. Ravindra Bhole",
+    text: "Member",
+    img: "https://thumbs.dreamstime.com/b/young-indian-man-happy-outdoors-looking-camera-39595562.jpg",
   },
   {
     id: 3,
-    name: "Virat Kohli",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/104/104",
+    name: "Miss. Jayashree Mohan",
+    text: "Member",
+    img: "https://globalventuring.com//content/uploads/2023/03/Sonam-Jain-landscape.png",
   },
   {
     id: 5,
-    name: "Sachin Tendulkar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    name: "Mr. Nikhil Sadalge",
+    text: "Member",
+    img: "https://thumbs.dreamstime.com/b/young-indian-man-happy-outdoors-looking-camera-39595562.jpg",
   },
 ];
 
@@ -33,10 +33,10 @@ const Testimonials = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
@@ -72,16 +72,16 @@ const Testimonials = () => {
       <div className="container">
         {/* header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
-          <p data-aos="fade-up" className="text-sm text-primary">
+          {/* <p data-aos="fade-up" className="text-sm text-primary">
             What our customers are saying
-          </p>
+          </p> */}
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Testimonials
+          Redevelopment Committee 
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
+          {/* <p data-aos="fade-up" className="text-xs text-gray-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
             asperiores modi Sit asperiores modi
-          </p>
+          </p> */}
         </div>
 
         {/* Testimonial cards */}
@@ -97,15 +97,15 @@ const Testimonials = () => {
                     <img
                       src={data.img}
                       alt=""
-                      className="rounded-full w-20 h-20"
+                      className="rounded-full w-20 h-20 object-cover"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
-                      <p className="text-xs text-gray-500">{data.text}</p>
                       <h1 className="text-xl font-bold text-black/80 dark:text-light">
                         {data.name}
                       </h1>
+                      <p className="text-sm text-gray-500">{data.text}</p>
                     </div>
                   </div>
                   <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">

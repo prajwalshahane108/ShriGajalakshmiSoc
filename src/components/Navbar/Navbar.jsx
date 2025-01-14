@@ -13,42 +13,42 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Top Rated",
+    name: "Contact Us",
     link: "/#services",
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: "Redevelopment",
     link: "/#",
   },
   {
     id: 3,
-    name: "Mens Wear",
+    name: "About Us",
     link: "/#",
   },
-  {
-    id: 3,
-    name: "Electronics",
-    link: "/#",
-  },
+  // {
+  //   id: 3,
+  //   name: "Electronics",
+  //   link: "/#",
+  // },
 ];
 
 const DropdownLinks = [
   {
     id: 1,
-    name: "Trending Products",
+    name: "about Us",
     link: "/#",
   },
   {
     id: 2,
-    name: "Best Selling",
+    name: "Committee",
     link: "/#",
   },
-  {
-    id: 3,
-    name: "Top Rated",
-    link: "/#",
-  },
+  // {
+  //   id: 3,
+  //   name: "Top Rated",
+  //   link: "/#",
+  // },
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
@@ -59,8 +59,8 @@ const Navbar = ({ handleOrderPopup }) => {
         <div className="container flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="Logo" className="w-10" />
-              Shopsy
+              {/* <img src={Logo} alt="Logo" className="w-10" /> */}
+              Shri Gajalaxmi Co-operative Housing Society
             </a>
           </div>
 
@@ -76,7 +76,7 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
 
             {/* order button */}
-            <button
+            {/* <button
               onClick={() => handleOrderPopup()}
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
             >
@@ -84,7 +84,7 @@ const Navbar = ({ handleOrderPopup }) => {
                 Order
               </span>
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
-            </button>
+            </button> */}
 
             {/* Darkmode Switch */}
             <div>
@@ -109,7 +109,7 @@ const Navbar = ({ handleOrderPopup }) => {
           {/* Simple Dropdown and Links */}
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
-              Trending Products
+              
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>
